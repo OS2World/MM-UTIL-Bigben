@@ -1,0 +1,67 @@
+--=========--
+   bigben2
+--=========--
+
+   Do the Big Ben, man! Every hour through your sound device under OS/2!
+----------------------------------------------------------------------------
+
+                                                Aachen, 14.12.93
+
+Hi!
+
+Exactly one year ago I wrote the first version of this little fun programm
+which plays the sound of Big Ben every full hour.
+
+In the meantime OS/2 evolved further.
+Especially the Multimedia Presentation Manager (MMPM) is now part of the box
+since OS/2 2.1.
+
+Like it or not -- it's the way to make noise now.
+
+So this is kind of an answer. :-)
+
+
+What's new?
+-----------
+
+* Uses MMPM/2 to play the .wav file (using REXX and the MCI interface)
+* Uses a PM timer for minimal CPU time usage (You shouldn't feel it at all!)
+* Uses a .wav which has been sampled quite cleaner than the former .voc
+
+
+The bigben2.zip archive contains:
+---------------------------------
+
+    makefile      makefile for use with the emx port of GNU C++
+    bigben2.cc    C++ source of the Big Ben launcher
+  * dingdong.cmd  REXX procedure which does ... well? :-)
+    bigben2.def   definition file
+    bigben2.doc   this doc
+  * bigben2.exe   bigben2 executable (an OMF .exe - no emx.dll needed)
+    bigben2.ico   a disaster of an icon (so ugly that it makes me proud)
+  * bigben.wav    Big Ben himself in .wav format
+
+An asterisk (*) indicates a necessary file
+
+-> Thanks to Eberhard Mattes and the FSF for the cute compiler.
+
+
+To get bigben2 started:
+-----------------------
+
+a) Install the MMPM if you didn't have it done already
+
+b) copy the contents of this archive in some dark corner of your harddisk
+
+c) call it from the drive icon (or dump it into the startup folder)
+
+Enjoy!
+
+
+Bye, Marc    (Usenet: Marc_van-Woerkom@ac3.maus.de)
+
+
+----------------------------------------------------------------------------
+Copyright note: The stuff is free but copyrightet. Like the GNU stuff.
+
+

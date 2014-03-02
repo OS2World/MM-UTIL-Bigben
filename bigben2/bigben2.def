@@ -1,0 +1,10 @@
+;
+; Module Definition File bigben2.def
+;
+
+NAME bigben2 WINDOWAPI
+DESCRIPTION 'bigben2 -- Copyright (c) 1993 by Marc E.E. van Woerkom. All rights reserved.'
+STACKSIZE 0x30000
+EXPORTS ClientWndProc
+
+

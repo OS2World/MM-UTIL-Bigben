@@ -1,0 +1,74 @@
+==========
+ bigben10
+==========
+
+Do the Big Ben, man! Every hour on your soundblaster under OS/2!
+----------------------------------------------------------------
+
+                                                     Aachen, den 14.12.92
+
+Hi!
+
+I'm a proud owner of a soundblaster card since a week now.
+
+Naturally I searched through all BBS and FTP servers for something to 
+feed this cute addition to my system.
+
+This package you got now is nothing special, it just combines some nice
+files I found and a little launcher of my own to produce some fun! :)
+
+
+It contains:
+
+    makefile    makefile for use with the emx port of GNU C++
+    bigben.cc   C++ source of the BigBen launcher
+  * emx.dll     runtime DLL from emx 0.8e
+    bigben.exe  BigBen executable (still needs emx.dll)
+  # player.exe  voc player 
+  # sbos2.sys   soundblaster driver for OS/2 2.0
+    bigben.voc  Big Ben himself
+
+
+(*) token from the emx-0.8e distribution by Eberhard Mattes
+(#) token from the sbos2v09.zip archiv by Michael Fulbright
+
+
+Both packages can be found at least on the internet FTP server 
+hobbes.nmsu.edu and will be certainly offered by any serious OS/2 BBS (e.g.
+the Fernwood filenet members).
+
+If you don't already have them - change that! Highly recommended!
+
+
+To get BigBen started:
+
+a) emx.dll
+
+   copy emx.dll to a directory mentioned by the LIBPATH statement in your
+   config.sys
+
+
+b) sbos2.sys
+
+   copy sbos2.sys to your sb directory. I use c:\sound\sbos2 on my system.
+
+   Add "device=c:\sound\sbos2\sbos2.sys IRQ7 ADDR220 SBREG" to your
+   config.sys. (Omitt SBREG if you use a SB Pro etc. See: sbos2 docs)
+
+
+c) reboot & run BigBen
+
+   BigBen will run at lowest priority and should issue a "player bigben.voc"
+   every time the hour changes.
+
+
+Enjoy!
+
+
+Bye, Marc    (Marc_van-Woerkom@ac3.maus.de)
+
+
+----------------------------------------------------------------------------
+Copyright note: The whole stuff falls under the common GNU GPL.
+
+
